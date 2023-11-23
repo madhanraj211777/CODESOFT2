@@ -1,0 +1,142 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADHANRAJ G - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        
+        @keyframes blink {
+            0%, 100% {
+                background-color: #3498db; 
+            }
+            50% {
+                background-color: #e74c3c; 
+            }
+        }
+
+        body {
+            animation: blink 5s infinite; 
+        }
+
+        .mode-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 80px;
+            color: #fff; 
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out; 
+        }
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeInUp 1s 0.5s ease-out; 
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff; 
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease; 
+        }
+
+        nav a:hover {
+            color: #e74c3c; 
+        }
+
+        main {
+            padding: 20px;
+            min-height: calc(100vh - 200px); 
+        }
+
+        
+        footer {
+            text-align: center;
+            color: #fff; 
+            background-color: #2c3e50; 
+            padding: 10px 0; 
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="mode-switch">
+        <label class="switch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <header>
+        <h1>MADHANRAJ G</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Madhanraj G, a passionate web developer. Explore my portfolio to learn more about my skills, projects, and experiences.Hello! I'm Madhanraj G, a passionate web developer based in chennai. I specialize in creating engaging and user-friendly web experiences. My journey in the world of web development is fueled by creativity, dedication, and a continuous quest for knowledge.
+
+                As a tech enthusiast, I enjoy staying updated on the latest trends and technologies in the ever-evolving web landscape. My skills span HTML, CSS, JavaScript, PHP, and more. I am adept at building responsive and dynamic websites, ensuring a seamless experience across various devices.
+                
+                Feel free to explore my portfolio to discover the projects I've worked on, my technical skills, and a glimpse into my professional journey. Whether you're a fellow developer, a potential collaborator, or someone interested in web development, I invite you to dive into the world of Madhanraj G.</p>
+        <br>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MADHANRAJ G. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
